@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.oxanneapp",
+      "sha256_cert_fingerprints": [
+        "AE:3B:24:D4:0E:0E:5A:BF:68:A6:F8:C8:92:2B:22:69:00:0C:3B:CB:57:E2:72:8C:7A:06:AC:D8:CA:46:1C:BF"
+      ]
+    }
+  }
+]
