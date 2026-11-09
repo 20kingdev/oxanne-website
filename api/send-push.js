@@ -89,8 +89,13 @@ module.exports = async function handler(req, res) {
           android: {
             priority: 'HIGH',
             notification: {
-              channel_id: 'oxanne_alerts_channel',
-              sound: 'default'
+              channel_id: 'oxanne_alerts_channel_v2',
+              notification_priority: 'PRIORITY_MAX',
+              default_sound: true,
+              default_vibrate_timings: true,
+              visibility: 'PUBLIC',
+              sound: 'default',
+              click_action: 'FLUTTER_NOTIFICATION_CLICK'
             }
           },
           data: data ? Object.fromEntries(Object.entries(data).map(([k, v]) => [k, String(v)])) : {}
