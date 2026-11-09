@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oxanne — La Plateforme N°1 des Artisans Qualifiés en RDC</title>
-    <meta name="description" content="Oxanne connecte les clients et les artisans certifiés à Lubumbashi, Kinshasa, Kolwezi et Goma. Devis gratuits en USD et Francs Congolais.">
+    <meta name="description" content="Oxanne connecte les clients et les artisans certifiés à Lubumbashi, Kinshasa, Kolwezi et Goma. Notifications en temps réel, messagerie intégrée, récupération de mot de passe. Devis gratuits en USD et Francs Congolais.">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,10 +44,10 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(10, 34, 64, 0.95);
+            background: rgba(10, 34, 64, 0.97);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255,255,255,0.08);
-            padding: 16px 24px;
+            padding: 14px 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -67,512 +67,281 @@
             text-decoration: none;
         }
         .logo-box {
-            width: 44px;
-            height: 44px;
+            width: 44px; height: 44px;
             background: var(--brand-orange);
             border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: 900;
-            color: white;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px; font-weight: 900; color: white;
             box-shadow: 0 4px 14px rgba(243,111,33,0.4);
         }
-        .logo-text {
-            color: white;
-            font-size: 22px;
-            font-weight: 900;
-            letter-spacing: -0.5px;
-        }
+        .logo-text { color: white; font-size: 22px; font-weight: 900; letter-spacing: -0.5px; }
         .logo-badge {
-            background: rgba(243,111,33,0.2);
-            color: #FF8A3D;
+            background: rgba(243,111,33,0.2); color: #FF8A3D;
             border: 1px solid rgba(243,111,33,0.4);
-            font-size: 11px;
-            font-weight: 700;
-            padding: 2px 8px;
-            border-radius: 6px;
+            font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 6px;
         }
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 28px;
-            list-style: none;
-        }
-        .nav-links a {
-            color: #CBD5E1;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 15px;
-            transition: color 0.2s;
-        }
+        .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; }
+        .nav-links a { color: #CBD5E1; text-decoration: none; font-weight: 600; font-size: 14.5px; transition: color 0.2s; }
         .nav-links a:hover { color: white; }
         .btn-nav {
-            background: var(--brand-orange);
-            color: white !important;
-            padding: 10px 22px;
-            border-radius: 10px;
-            font-weight: 700;
+            background: var(--brand-orange); color: white !important;
+            padding: 10px 22px; border-radius: 10px; font-weight: 700;
             box-shadow: 0 4px 16px rgba(243,111,33,0.35);
             transition: transform 0.15s, background 0.2s !important;
         }
-        .btn-nav:hover {
-            background: var(--brand-orange-hover) !important;
-            transform: translateY(-2px);
-        }
+        .btn-nav:hover { background: var(--brand-orange-hover) !important; transform: translateY(-2px); }
 
         /* ── HERO ── */
         .hero {
             background: linear-gradient(135deg, var(--primary-navy) 0%, var(--navy-light) 60%, #1c3b6b 100%);
-            color: white;
-            padding: 90px 24px 120px;
-            position: relative;
-            overflow: hidden;
+            color: white; padding: 90px 24px 120px; position: relative; overflow: hidden;
         }
         .hero::before {
-            content: '';
-            position: absolute;
-            top: -150px; right: -150px;
+            content: ''; position: absolute; top: -150px; right: -150px;
             width: 500px; height: 500px;
             background: radial-gradient(circle, rgba(243,111,33,0.18) 0%, transparent 70%);
             border-radius: 50%;
         }
         .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -100px; left: -100px;
+            content: ''; position: absolute; bottom: -100px; left: -100px;
             width: 400px; height: 400px;
             background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%);
             border-radius: 50%;
         }
         .hero-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            gap: 50px;
-            align-items: center;
-            position: relative;
-            z-index: 10;
+            max-width: 1200px; margin: 0 auto;
+            display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 50px;
+            align-items: center; position: relative; z-index: 10;
         }
         .hero-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(243,111,33,0.18);
-            border: 1px solid rgba(243,111,33,0.4);
-            color: #FF8A3D;
-            padding: 6px 16px;
-            border-radius: 9999px;
-            font-size: 13px;
-            font-weight: 700;
-            margin-bottom: 22px;
+            display: inline-flex; align-items: center; gap: 8px;
+            background: rgba(243,111,33,0.18); border: 1px solid rgba(243,111,33,0.4);
+            color: #FF8A3D; padding: 6px 16px; border-radius: 9999px;
+            font-size: 13px; font-weight: 700; margin-bottom: 22px;
         }
-        .hero h1 {
-            font-size: 48px;
-            line-height: 1.15;
-            font-weight: 900;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
-        }
+        .hero h1 { font-size: 48px; line-height: 1.15; font-weight: 900; margin-bottom: 20px; letter-spacing: -1px; }
         .hero h1 span {
             color: var(--brand-orange);
             background: linear-gradient(90deg, #FF8A3D, #F36F21);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
-        .hero p {
-            font-size: 18px;
-            color: #CBD5E1;
-            line-height: 1.6;
-            margin-bottom: 34px;
-            max-width: 540px;
-        }
-        .hero-ctas {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
+        .hero p { font-size: 18px; color: #CBD5E1; line-height: 1.6; margin-bottom: 34px; max-width: 540px; }
+        .hero-ctas { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; }
         .btn-primary {
-            background: var(--brand-orange);
-            color: white;
-            padding: 16px 30px;
-            border-radius: 14px;
-            font-weight: 800;
-            font-size: 16px;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            box-shadow: 0 8px 24px rgba(243,111,33,0.4);
-            transition: transform 0.2s, background 0.2s;
+            background: var(--brand-orange); color: white; padding: 16px 30px;
+            border-radius: 14px; font-weight: 800; font-size: 16px; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 10px;
+            box-shadow: 0 8px 24px rgba(243,111,33,0.4); transition: transform 0.2s, background 0.2s;
         }
-        .btn-primary:hover {
-            background: var(--brand-orange-hover);
-            transform: translateY(-3px);
-        }
+        .btn-primary:hover { background: var(--brand-orange-hover); transform: translateY(-3px); }
         .btn-secondary {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white;
-            padding: 16px 28px;
-            border-radius: 14px;
-            font-weight: 700;
-            font-size: 15px;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: background 0.2s;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            color: white; padding: 16px 28px; border-radius: 14px; font-weight: 700;
+            font-size: 15px; text-decoration: none; display: inline-flex; align-items: center;
+            gap: 8px; transition: background 0.2s;
         }
         .btn-secondary:hover { background: rgba(255,255,255,0.18); }
 
-        .hero-trust {
-            display: flex;
-            gap: 28px;
-            border-top: 1px solid rgba(255,255,255,0.12);
-            padding-top: 24px;
-        }
+        .hero-trust { display: flex; gap: 28px; border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; flex-wrap: wrap; }
         .trust-item strong { display: block; font-size: 20px; font-weight: 800; color: white; }
         .trust-item span { font-size: 12.5px; color: #94A3B8; }
 
         /* Mockup Mobile */
-        .mockup-wrap {
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
+        .mockup-wrap { display: flex; justify-content: center; position: relative; }
         .phone-frame {
-            width: 320px;
-            background: #0B192C;
-            border-radius: 44px;
-            padding: 12px;
+            width: 300px; background: #0B192C; border-radius: 44px; padding: 12px;
             box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1);
-            border: 4px solid #1E293B;
-            position: relative;
+            border: 4px solid #1E293B; position: relative;
         }
-        .phone-screen {
-            background: white;
-            border-radius: 34px;
-            overflow: hidden;
-            color: var(--text-dark);
-            box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
-        }
-        .phone-header {
-            background: var(--primary-navy);
-            color: white;
-            padding: 24px 16px 14px;
-            text-align: left;
-        }
-        .phone-body {
-            padding: 16px;
-            background: #F8FAFC;
-        }
+        .phone-screen { background: white; border-radius: 34px; overflow: hidden; color: var(--text-dark); box-shadow: inset 0 0 4px rgba(0,0,0,0.1); }
+        .phone-header { background: var(--primary-navy); color: white; padding: 20px 16px 12px; }
+        .phone-body { padding: 14px; background: #F8FAFC; }
         .mock-card {
-            background: white;
-            border-radius: 14px;
-            padding: 12px;
-            margin-bottom: 10px;
-            border: 1px solid var(--border);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-            text-align: left;
+            background: white; border-radius: 12px; padding: 10px; margin-bottom: 8px;
+            border: 1px solid var(--border); box-shadow: 0 2px 6px rgba(0,0,0,0.03); text-align: left;
         }
         .mock-pill {
-            display: inline-block;
-            background: rgba(243,111,33,0.12);
-            color: var(--brand-orange);
-            font-size: 10px;
-            font-weight: 800;
-            padding: 2px 8px;
-            border-radius: 4px;
-            margin-bottom: 4px;
+            display: inline-block; background: rgba(243,111,33,0.12); color: var(--brand-orange);
+            font-size: 9px; font-weight: 800; padding: 2px 7px; border-radius: 4px; margin-bottom: 3px;
         }
-        .mock-price {
-            font-weight: 900;
-            font-size: 13px;
-            color: var(--primary-navy);
+        .mock-notif {
+            background: linear-gradient(135deg, #0A2240, #16325B); border-radius: 10px;
+            padding: 10px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px;
         }
+        .mock-notif-icon { font-size: 18px; flex-shrink: 0; }
+        .mock-notif-text { font-size: 10px; color: white; line-height: 1.4; }
+        .mock-notif-title { font-weight: 800; font-size: 11px; color: white; margin-bottom: 2px; }
 
-        /* ── SECTION CITIES ── */
-        .cities-strip {
-            background: white;
-            border-bottom: 1px solid var(--border);
-            padding: 24px 20px;
-        }
+        /* ── CITIES STRIP ── */
+        .cities-strip { background: white; border-bottom: 1px solid var(--border); padding: 20px; }
         .cities-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-            text-align: center;
+            max-width: 1200px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-around;
+            flex-wrap: wrap; gap: 16px; text-align: center;
         }
-        .city-box {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 700;
-            font-size: 15px;
-            color: var(--text-dark);
-        }
-        .city-box span { font-size: 22px; }
+        .city-box { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14.5px; color: var(--text-dark); }
+        .city-box span { font-size: 20px; }
 
-        /* ── SERVICES SECTION ── */
-        .section {
-            padding: 90px 24px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .section-header {
-            text-align: center;
-            max-width: 680px;
-            margin: 0 auto 50px;
-        }
-        .section-tag {
-            color: var(--brand-orange);
-            text-transform: uppercase;
-            font-size: 13px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-            display: block;
-        }
-        .section-header h2 {
-            font-size: 38px;
-            font-weight: 900;
-            color: var(--primary-navy);
-            letter-spacing: -0.5px;
-            margin-bottom: 14px;
-        }
-        .section-header p {
-            color: var(--text-muted);
-            font-size: 16px;
-        }
+        /* ── SECTIONS ── */
+        .section { padding: 90px 24px; max-width: 1200px; margin: 0 auto; }
+        .section-header { text-align: center; max-width: 680px; margin: 0 auto 50px; }
+        .section-tag { color: var(--brand-orange); text-transform: uppercase; font-size: 13px; font-weight: 800; letter-spacing: 1px; margin-bottom: 8px; display: block; }
+        .section-header h2 { font-size: 38px; font-weight: 900; color: var(--primary-navy); letter-spacing: -0.5px; margin-bottom: 14px; }
+        .section-header p { color: var(--text-muted); font-size: 16px; }
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-        }
+        /* ── SERVICES ── */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(255px, 1fr)); gap: 18px; }
         .service-card {
-            background: white;
-            border-radius: 20px;
-            padding: 30px 24px;
-            border: 1px solid var(--border);
-            box-shadow: var(--shadow-sm);
+            background: white; border-radius: 20px; padding: 28px 22px;
+            border: 1px solid var(--border); box-shadow: var(--shadow-sm);
             transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
         }
-        .service-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--brand-orange);
-        }
+        .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--brand-orange); }
         .service-icon {
-            width: 58px; height: 58px;
-            background: var(--orange-soft);
-            color: var(--brand-orange);
-            border-radius: 16px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 28px;
-            margin-bottom: 20px;
+            width: 56px; height: 56px; background: var(--orange-soft); color: var(--brand-orange);
+            border-radius: 16px; display: flex; align-items: center; justify-content: center;
+            font-size: 26px; margin-bottom: 18px;
         }
-        .service-card h3 {
-            font-size: 19px;
-            font-weight: 800;
-            color: var(--primary-navy);
-            margin-bottom: 8px;
-        }
-        .service-card p {
-            color: var(--text-muted);
-            font-size: 14px;
-            line-height: 1.55;
-        }
+        .service-card h3 { font-size: 18px; font-weight: 800; color: var(--primary-navy); margin-bottom: 7px; }
+        .service-card p { color: var(--text-muted); font-size: 13.5px; line-height: 1.55; }
+        .service-price { margin-top: 12px; font-size: 12.5px; font-weight: 700; color: var(--brand-orange); background: var(--orange-soft); padding: 4px 10px; border-radius: 6px; display: inline-block; }
 
         /* ── HOW IT WORKS ── */
-        .how-section {
-            background: white;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            padding: 90px 24px;
-        }
-        .steps-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        .step-item {
-            position: relative;
-            text-align: center;
-            padding: 24px;
-        }
+        .how-section { background: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 90px 24px; }
+        .steps-wrapper { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 30px; }
+        .step-item { position: relative; text-align: center; padding: 24px; }
         .step-num {
             width: 54px; height: 54px;
             background: linear-gradient(135deg, var(--primary-navy), var(--navy-light));
-            color: white;
-            border-radius: 16px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 20px;
-            font-weight: 900;
-            margin: 0 auto 20px;
+            color: white; border-radius: 16px; display: flex; align-items: center; justify-content: center;
+            font-size: 20px; font-weight: 900; margin: 0 auto 20px;
             box-shadow: 0 6px 18px rgba(10,34,64,0.18);
         }
-        .step-item h3 { font-size: 18px; font-weight: 800; color: var(--primary-navy); margin-bottom: 10px; }
-        .step-item p { color: var(--text-muted); font-size: 14px; line-height: 1.55; }
+        .step-item h3 { font-size: 17px; font-weight: 800; color: var(--primary-navy); margin-bottom: 10px; }
+        .step-item p { color: var(--text-muted); font-size: 13.5px; line-height: 1.55; }
 
-        /* ── MULTI CURRENCY HIGHLIGHT ── */
+        /* ── FEATURES / NOUVEAUTÉS ── */
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .feature-card {
+            background: white; border-radius: 20px; padding: 28px 24px;
+            border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+            display: flex; gap: 18px; align-items: flex-start;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .feature-card-icon {
+            width: 50px; height: 50px; border-radius: 14px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center; font-size: 24px;
+        }
+        .feature-card h3 { font-size: 16px; font-weight: 800; color: var(--primary-navy); margin-bottom: 6px; }
+        .feature-card p { color: var(--text-muted); font-size: 13.5px; line-height: 1.5; }
+        .new-badge {
+            background: #10B981; color: white; font-size: 10px; font-weight: 800;
+            padding: 2px 8px; border-radius: 999px; vertical-align: middle; margin-left: 6px;
+        }
+
+        /* ── CURRENCY BANNER ── */
         .feature-banner {
             background: linear-gradient(135deg, var(--primary-navy), var(--navy-light));
-            border-radius: 28px;
-            padding: 50px 40px;
-            color: white;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-            margin: 60px auto;
-            max-width: 1200px;
-            box-shadow: var(--shadow-lg);
+            border-radius: 28px; padding: 50px 40px; color: white;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+            align-items: center; margin: 60px auto; max-width: 1200px; box-shadow: var(--shadow-lg);
         }
         .feature-banner h2 { font-size: 32px; font-weight: 900; margin-bottom: 16px; }
         .feature-banner p { color: #CBD5E1; font-size: 16px; line-height: 1.6; margin-bottom: 24px; }
-        .currency-chips { display: flex; gap: 12px; }
+        .currency-chips { display: flex; gap: 12px; flex-wrap: wrap; }
         .currency-chip {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            padding: 10px 18px;
-            border-radius: 12px;
-            font-weight: 800;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            padding: 10px 18px; border-radius: 12px; font-weight: 800; font-size: 14px;
+            display: flex; align-items: center; gap: 8px;
         }
-        .currency-chip.active {
-            background: var(--brand-orange);
-            border-color: var(--brand-orange);
-        }
+        .currency-chip.active { background: var(--brand-orange); border-color: var(--brand-orange); }
 
-        /* ── TEAM SECTION ── */
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
+        /* ── TESTIMONIALS ── */
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .testimonial-card {
+            background: white; border-radius: 20px; padding: 28px 24px;
+            border: 1px solid var(--border); box-shadow: var(--shadow-sm);
         }
-        .team-card {
-            background: white;
-            border-radius: 24px;
-            padding: 36px 28px;
-            border: 1px solid var(--border);
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .team-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-        }
-        .avatar-box {
-            width: 100px;
-            height: 100px;
+        .testimonial-stars { color: #FBBF24; font-size: 18px; margin-bottom: 12px; }
+        .testimonial-text { color: var(--text-dark); font-size: 14.5px; line-height: 1.6; margin-bottom: 18px; font-style: italic; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar {
+            width: 44px; height: 44px; border-radius: 50%;
             background: linear-gradient(135deg, var(--primary-navy), var(--brand-orange));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            font-weight: 900;
-            color: white;
-            margin: 0 auto 20px;
-            box-shadow: 0 8px 24px rgba(10,34,64,0.18);
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 800; font-size: 16px; flex-shrink: 0;
+        }
+        .testimonial-name { font-weight: 800; font-size: 14px; color: var(--primary-navy); }
+        .testimonial-role { font-size: 12px; color: var(--text-muted); }
+
+        /* ── FAQ ── */
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item {
+            background: white; border-radius: 16px; border: 1px solid var(--border);
+            margin-bottom: 12px; overflow: hidden;
+        }
+        .faq-question {
+            padding: 20px 24px; font-weight: 700; font-size: 15.5px; color: var(--primary-navy);
+            cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+            user-select: none;
+        }
+        .faq-question::after { content: '+'; font-size: 22px; color: var(--brand-orange); font-weight: 400; transition: transform 0.2s; }
+        .faq-item.open .faq-question::after { content: '−'; }
+        .faq-answer { padding: 0 24px 20px; color: var(--text-muted); font-size: 14.5px; line-height: 1.65; display: none; }
+        .faq-item.open .faq-answer { display: block; }
+
+        /* ── TEAM ── */
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
+        .team-card {
+            background: white; border-radius: 24px; padding: 36px 28px;
+            border: 1px solid var(--border); text-align: center;
+            box-shadow: var(--shadow-sm); transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+        .avatar-box {
+            width: 100px; height: 100px;
+            background: linear-gradient(135deg, var(--primary-navy), var(--brand-orange));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 40px; font-weight: 900; color: white;
+            margin: 0 auto 20px; box-shadow: 0 8px 24px rgba(10,34,64,0.18);
         }
         .avatar-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 20px;
-            box-shadow: 0 8px 24px rgba(10,34,64,0.18);
-            border: 3px solid white;
-            outline: 2px solid var(--brand-orange);
-            display: block;
+            width: 100px; height: 100px; border-radius: 50%; object-fit: cover;
+            margin: 0 auto 20px; box-shadow: 0 8px 24px rgba(10,34,64,0.18);
+            border: 3px solid white; outline: 2px solid var(--brand-orange); display: block;
         }
         .team-card h3 { font-size: 21px; font-weight: 800; color: var(--primary-navy); margin-bottom: 4px; }
-        .team-role {
-            color: var(--brand-orange);
-            font-weight: 700;
-            font-size: 13.5px;
-            margin-bottom: 16px;
-            display: block;
-        }
+        .team-role { color: var(--brand-orange); font-weight: 700; font-size: 13.5px; margin-bottom: 16px; display: block; }
         .team-card p { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
-        .tech-tags {
-            display: flex;
-            gap: 8px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 18px;
-        }
+        .tech-tags { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
         .tech-tag {
-            background: var(--bg-light);
-            border: 1px solid var(--border);
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 11.5px;
-            font-weight: 700;
-            color: var(--text-dark);
+            background: var(--bg-light); border: 1px solid var(--border);
+            padding: 4px 10px; border-radius: 6px; font-size: 11.5px; font-weight: 700; color: var(--text-dark);
         }
 
         /* ── FOOTER ── */
-        footer {
-            background: var(--navy-dark);
-            color: #94A3B8;
-            padding: 70px 24px 30px;
-            border-top: 1px solid rgba(255,255,255,0.06);
-        }
-        .footer-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1.5fr;
-            gap: 40px;
-            margin-bottom: 50px;
-        }
-        .footer-col h4 {
-            color: white;
-            font-size: 16px;
-            font-weight: 800;
-            margin-bottom: 18px;
-        }
+        footer { background: var(--navy-dark); color: #94A3B8; padding: 70px 24px 30px; border-top: 1px solid rgba(255,255,255,0.06); }
+        .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 50px; }
+        .footer-col h4 { color: white; font-size: 15px; font-weight: 800; margin-bottom: 18px; }
         .footer-col ul { list-style: none; }
         .footer-col ul li { margin-bottom: 10px; }
-        .footer-col ul a {
-            color: #94A3B8;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.2s;
-        }
+        .footer-col ul a { color: #94A3B8; text-decoration: none; font-size: 13.5px; transition: color 0.2s; }
         .footer-col ul a:hover { color: white; }
-        .footer-col p { font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 0 auto;
-            border-top: 1px solid rgba(255,255,255,0.08);
-            padding-top: 24px;
-            text-align: center;
-            font-size: 13px;
+        .footer-col p { font-size: 13.5px; line-height: 1.6; margin-bottom: 10px; }
+        .footer-socials { display: flex; gap: 10px; margin-top: 14px; }
+        .footer-social-btn {
+            width: 36px; height: 36px; border-radius: 10px;
+            background: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center;
+            font-size: 16px; text-decoration: none; transition: background 0.2s;
         }
+        .footer-social-btn:hover { background: var(--brand-orange); }
+        .footer-bottom { max-width: 1200px; margin: 0 auto; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; text-align: center; font-size: 13px; }
 
+        /* ── RESPONSIVE ── */
         @media (max-width: 900px) {
             .hero-inner { grid-template-columns: 1fr; text-align: center; }
-            .hero h1 { font-size: 36px; }
+            .hero h1 { font-size: 34px; }
             .hero p { margin: 0 auto 30px; }
             .hero-ctas { justify-content: center; }
             .hero-trust { justify-content: center; }
@@ -580,6 +349,7 @@
             .currency-chips { justify-content: center; }
             .footer-inner { grid-template-columns: 1fr 1fr; }
             .nav-links { display: none; }
+            .mockup-wrap { display: none; }
         }
     </style>
 </head>
@@ -595,9 +365,12 @@
         </a>
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
+            <li><a href="#nouveautes">Nouveautés</a></li>
             <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+            <li><a href="#avis">Avis</a></li>
             <li><a href="#equipe">L'Équipe</a></li>
-            <li><a href="https://centre-d-aide.vercel.app/" target="_blank">Support & Aide</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="https://centre-d-aide.vercel.app/" target="_blank">Aide</a></li>
             <li><a class="btn-nav" href="#telecharger">Télécharger</a></li>
         </ul>
     </div>
@@ -608,8 +381,8 @@
     <div class="hero-inner">
         <div>
             <div class="hero-tag">🇨🇩 La Référence des Artisans en RDC</div>
-            <h1>Trouvez un Artisan <span>Qualifié & Vérifié</span> en RDC</h1>
-            <p>Oxanne connecte les particuliers et entreprises avec les meilleurs électriciens, plombiers, menuisiers et professionnels du bâtiment à Lubumbashi, Kinshasa, Kolwezi et Goma.</p>
+            <h1>Trouvez un Artisan <span>Qualifié &amp; Vérifié</span> en RDC</h1>
+            <p>Oxanne connecte les particuliers et entreprises avec les meilleurs électriciens, plombiers, menuisiers et professionnels du bâtiment à Lubumbashi, Kinshasa, Kolwezi et Goma. Notifications instantanées, messagerie intégrée, zéro commission.</p>
             <div class="hero-ctas">
                 <a class="btn-primary" href="#telecharger">
                     <svg width="22" height="22" viewBox="0 0 512 512" style="display:inline-block; vertical-align:middle;"><path fill="#4285F4" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1z"/><path fill="#34A853" d="M47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256-256L47 0z"/><path fill="#EA4335" d="M325.3 277.7l60.1 60.1L104.6 499l220.7-221.3z"/><path fill="#FBBC04" d="M486.7 229.8c11.6 6.7 18.7 18.5 18.7 31.9s-7.1 25.2-18.7 31.9l-81.3 46.2-70-70 70-70 81.3 20z"/></svg>
@@ -632,6 +405,10 @@
                     <strong>0% Commission</strong>
                     <span>Tarifs directs artisan</span>
                 </div>
+                <div class="trust-item">
+                    <strong>Notifications Push</strong>
+                    <span>Alertes en temps réel</span>
+                </div>
             </div>
         </div>
 
@@ -640,40 +417,48 @@
             <div class="phone-frame">
                 <div class="phone-screen">
                     <div class="phone-header" style="display:flex; align-items:center; gap:10px;">
-                        <img src="logo.jpg" style="width:28px; height:28px; border-radius:6px; object-fit:cover;">
+                        <img src="logo.jpg" style="width:26px; height:26px; border-radius:6px; object-fit:cover;">
                         <div>
-                            <small style="color:#94A3B8; font-size:10px;">LUBUMBASHI · RDC</small>
-                            <h4 style="font-size:14px; font-weight:800; margin-top:1px;">Oxanne</h4>
+                            <small style="color:#94A3B8; font-size:9px;">LUBUMBASHI · RDC</small>
+                            <h4 style="font-size:13px; font-weight:800; margin-top:1px;">Oxanne</h4>
                         </div>
+                        <div style="margin-left:auto; background:rgba(16,185,129,0.2); padding:3px 8px; border-radius:6px; font-size:9px; font-weight:700; color:#10B981;">● En ligne</div>
                     </div>
                     <div class="phone-body">
-                        <img src="artisan_hero.jpg" alt="Artisan Oxanne" style="width:100%; height:90px; object-fit:cover; border-radius:10px; margin-bottom:10px;">
-                        <div class="mock-card">
-                            <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                                <img src="artisan_tech.jpg" style="width:28px; height:28px; border-radius:50%; object-fit:cover;">
-                                <div>
-                                    <span class="mock-pill">ÉLECTRICITÉ</span>
-                                    <div style="font-size:11px; font-weight:700; color:#0F172A;">Panne disjoncteur général</div>
-                                </div>
-                            </div>
-                            <div style="font-size:10.5px; color:#64748B;">Lubumbashi, Golf Météo</div>
-                            <div style="margin-top:6px; display:flex; justify-content:space-between; align-items:center;">
-                                <span class="mock-price">35 $</span>
-                                <span style="font-size:10px; color:#10B981; font-weight:700;">✓ Disponible</span>
+                        <!-- Notification push simulée -->
+                        <div class="mock-notif">
+                            <div class="mock-notif-icon">🔔</div>
+                            <div>
+                                <div class="mock-notif-title">Nouvelle demande reçue !</div>
+                                <div class="mock-notif-text">Jean-Paul B. cherche un électricien à Golf Météo.</div>
                             </div>
                         </div>
                         <div class="mock-card">
-                            <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
-                                <img src="artisan_wood.jpg" style="width:28px; height:28px; border-radius:50%; object-fit:cover;">
+                            <div style="display:flex; align-items:center; gap:7px; margin-bottom:4px;">
+                                <img src="artisan_tech.jpg" style="width:26px; height:26px; border-radius:50%; object-fit:cover;">
                                 <div>
-                                    <span class="mock-pill" style="background:rgba(10,34,64,0.1); color:#0A2240;">MENUISERIE</span>
-                                    <div style="font-size:11px; font-weight:700; color:#0F172A;">Placard sur mesure</div>
+                                    <span class="mock-pill">ÉLECTRICITÉ</span>
+                                    <div style="font-size:10.5px; font-weight:700; color:#0F172A;">Panne disjoncteur général</div>
                                 </div>
                             </div>
-                            <div style="font-size:10.5px; color:#64748B;">Lubumbashi, Centre-Ville</div>
-                            <div style="margin-top:6px; display:flex; justify-content:space-between; align-items:center;">
-                                <span class="mock-price">85 000 FC</span>
-                                <span style="font-size:10px; color:#10B981; font-weight:700;">✓ Disponible</span>
+                            <div style="font-size:9.5px; color:#64748B;">Lubumbashi, Golf Météo</div>
+                            <div style="margin-top:5px; display:flex; justify-content:space-between; align-items:center;">
+                                <span style="font-weight:900; font-size:12px; color:#0A2240;">35 $</span>
+                                <span style="font-size:9.5px; color:#10B981; font-weight:700;">✓ Disponible</span>
+                            </div>
+                        </div>
+                        <div class="mock-card">
+                            <div style="display:flex; align-items:center; gap:7px; margin-bottom:4px;">
+                                <img src="artisan_wood.jpg" style="width:26px; height:26px; border-radius:50%; object-fit:cover;">
+                                <div>
+                                    <span class="mock-pill" style="background:rgba(10,34,64,0.1); color:#0A2240;">MENUISERIE</span>
+                                    <div style="font-size:10.5px; font-weight:700; color:#0F172A;">Placard sur mesure</div>
+                                </div>
+                            </div>
+                            <div style="font-size:9.5px; color:#64748B;">Lubumbashi, Centre-Ville</div>
+                            <div style="margin-top:5px; display:flex; justify-content:space-between; align-items:center;">
+                                <span style="font-weight:900; font-size:12px; color:#0A2240;">85 000 FC</span>
+                                <span style="font-size:9.5px; color:#10B981; font-weight:700;">✓ Disponible</span>
                             </div>
                         </div>
                     </div>
@@ -690,6 +475,8 @@
         <div class="city-box"><span>📍</span> Kinshasa</div>
         <div class="city-box"><span>📍</span> Kolwezi</div>
         <div class="city-box"><span>📍</span> Goma</div>
+        <div class="city-box"><span>📍</span> Mbuji-Mayi</div>
+        <div class="city-box"><span>🌍</span> En expansion...</div>
     </div>
 </div>
 
@@ -705,42 +492,103 @@
         <div class="service-card">
             <div class="service-icon">⚡</div>
             <h3>Électricité Générale</h3>
-            <p>Dépannage d'urgence, installation de tableaux électriques, câblage bâtiment, maintenance groupe électrogène et solaire.</p>
+            <p>Dépannage d'urgence, installation de tableaux électriques, câblage bâtiment, maintenance groupe électrogène et panneaux solaires.</p>
+            <span class="service-price">À partir de 15 $ / 25 000 FC</span>
         </div>
         <div class="service-card">
             <div class="service-icon">🚰</div>
             <h3>Plomberie &amp; Sanitaire</h3>
             <p>Réparation de fuites d'eau, débouchage de canalisations, pose de sanitaires, chauffe-eau et raccordement tuyauterie.</p>
+            <span class="service-price">À partir de 20 $ / 35 000 FC</span>
         </div>
         <div class="service-card">
             <div class="service-icon">🪵</div>
             <h3>Menuiserie &amp; Meubles</h3>
             <p>Conception de placards, portes, fenêtres, lits sur mesure et restauration de mobilier en bois massif local.</p>
+            <span class="service-price">À partir de 40 $ / 70 000 FC</span>
         </div>
         <div class="service-card">
             <div class="service-icon">🎨</div>
             <h3>Peinture &amp; Finitions</h3>
             <p>Peinture intérieure et extérieure, enduit lissé, décoration murale et rafraîchissement complet de logements ou bureaux.</p>
+            <span class="service-price">À partir de 25 $ / 45 000 FC</span>
         </div>
         <div class="service-card">
             <div class="service-icon">❄️</div>
             <h3>Froid &amp; Climatisation</h3>
             <p>Installation de split, recharge de gaz frigorigène, entretien et dépannage de réfrigérateurs et chambres froides.</p>
+            <span class="service-price">À partir de 30 $ / 50 000 FC</span>
         </div>
         <div class="service-card">
             <div class="service-icon">🔩</div>
             <h3>Soudure &amp; Métallurgie</h3>
             <p>Portails métalliques coulissants, antivols, grilles de sécurité, charpentes métalliques et réparation d'ouvrages en fer.</p>
+            <span class="service-price">À partir de 35 $ / 60 000 FC</span>
         </div>
         <div class="service-card">
             <div class="service-icon">🧱</div>
             <h3>Maçonnerie &amp; Gros Œuvre</h3>
             <p>Construction, élévation de murs, crépissage, dallage béton, clôtures et petites rénovations de maçonnerie.</p>
+            <span class="service-price">Sur devis artisan</span>
         </div>
         <div class="service-card">
             <div class="service-icon">📐</div>
             <h3>Carrelage &amp; Pose</h3>
             <p>Pose de carrelage au sol et mural, faïence, mosaïque, terrasses et joints d'étanchéité professionnels.</p>
+            <span class="service-price">À partir de 20 $ / 35 000 FC</span>
+        </div>
+    </div>
+</section>
+
+<!-- NOUVEAUTÉS V1.1 -->
+<section class="section" id="nouveautes" style="background: var(--bg-light); padding-top: 0; padding-bottom: 80px;">
+    <div class="section-header">
+        <span class="section-tag">Version 1.1 — Mise à Jour Récente</span>
+        <h2>Des fonctionnalités pensées pour vous</h2>
+        <p>Oxanne s'améliore constamment pour vous offrir la meilleure expérience possible, même dans les conditions réseau difficiles de la RDC.</p>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-card-icon" style="background: rgba(239,68,68,0.1);">🔔</div>
+            <div>
+                <h3>Notifications Push <span class="new-badge">NOUVEAU</span></h3>
+                <p>Recevez des alertes instantanées sur votre téléphone (bannière + son + vibration) même quand l'application est fermée. Nouveaux messages, demandes, et mises à jour de statut — vous ne ratez plus rien.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-card-icon" style="background: rgba(16,185,129,0.1);">📶</div>
+            <div>
+                <h3>Mode Hors-Ligne Intelligent <span class="new-badge">NOUVEAU</span></h3>
+                <p>Plus besoin d'être déconnecté en attendant la connexion. Un bandeau s'affiche discrètement quand le réseau est faible et l'application reprend automatiquement dès que la connexion est rétablie.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-card-icon" style="background: rgba(99,102,241,0.1);">🔑</div>
+            <div>
+                <h3>Récupération de Mot de Passe <span class="new-badge">NOUVEAU</span></h3>
+                <p>Mot de passe oublié ? Récupérez votre compte en quelques secondes via un lien envoyé à votre adresse email, directement depuis l'écran de connexion.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-card-icon" style="background: rgba(243,111,33,0.1);">💬</div>
+            <div>
+                <h3>Messagerie Temps Réel</h3>
+                <p>Échangez directement avec l'artisan ou le client via la messagerie instantanée intégrée. Chaque nouveau message déclenche une notification push immédiate.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-card-icon" style="background: rgba(10,34,64,0.08);">🔗</div>
+            <div>
+                <h3>Partage de Profil Artisan</h3>
+                <p>Chaque artisan dispose d'un lien de profil partageable. Envoyez-le par WhatsApp ou SMS — l'application s'ouvre directement sur le bon profil.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-card-icon" style="background: rgba(16,185,129,0.1);">✅</div>
+            <div>
+                <h3>Profils Vérifiés par l'Équipe</h3>
+                <p>Chaque artisan est manuellement vérifié par l'équipe Oxanne avant d'être visible. Numéro de téléphone, spécialité et localisation — tout est contrôlé.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -750,30 +598,51 @@
     <div class="section-header">
         <span class="section-tag">Simplicité &amp; Rapidité</span>
         <h2>Comment fonctionne Oxanne ?</h2>
-        <p>Une démarche transparente en 4 étapes simples pour trouver le bon professionnel.</p>
+        <p>Une démarche transparente en 5 étapes simples pour trouver le bon professionnel.</p>
     </div>
 
     <div class="steps-wrapper">
         <div class="step-item">
             <div class="step-num">1</div>
-            <h3>Publiez votre besoin</h3>
-            <p>Décrivez précisément le travail à réaliser et ajoutez des photos de la panne ou de la pièce.</p>
+            <h3>Créez votre compte</h3>
+            <p>Inscrivez-vous gratuitement avec votre email ou numéro de téléphone en moins de 2 minutes.</p>
         </div>
         <div class="step-item">
             <div class="step-num">2</div>
+            <h3>Publiez votre besoin</h3>
+            <p>Décrivez le travail à réaliser, ajoutez des photos et indiquez votre quartier ou ville.</p>
+        </div>
+        <div class="step-item">
+            <div class="step-num">3</div>
             <h3>Fixez votre budget</h3>
             <p>Indiquez votre budget prévisionnel en <strong>USD ($)</strong> ou en <strong>Francs Congolais (FC)</strong>.</p>
         </div>
         <div class="step-item">
-            <div class="step-num">3</div>
+            <div class="step-num">4</div>
             <h3>Échangez en direct</h3>
-            <p>Discutez avec les artisans vérifiés via la messagerie instantanée intégrée pour convenir du rendez-vous.</p>
+            <p>Discutez avec les artisans vérifiés via la messagerie instantanée. Recevez des alertes push pour chaque réponse.</p>
         </div>
         <div class="step-item">
-            <div class="step-num">4</div>
+            <div class="step-num">5</div>
             <h3>Notez la prestation</h3>
             <p>Une fois le travail achevé, laissez un avis pour aider toute la communauté Oxanne en RDC.</p>
         </div>
+    </div>
+</div>
+
+<!-- ARTISAN CTA BAND -->
+<div style="background: linear-gradient(135deg, #0A2240 0%, #16325B 100%); padding: 60px 24px;">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center; color: white;">
+        <div style="font-size: 40px; margin-bottom: 16px;">🛠️</div>
+        <h2 style="font-size: 30px; font-weight: 900; margin-bottom: 14px;">Vous êtes artisan en RDC ?</h2>
+        <p style="color: #CBD5E1; font-size: 16px; margin-bottom: 28px; max-width: 580px; margin-left: auto; margin-right: auto;">Rejoignez Oxanne et recevez des demandes directement sur votre téléphone. Pas de frais d'inscription, pas de commission — vous gardez 100% de vos revenus.</p>
+        <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+            <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 14px 20px; border-radius: 12px; font-size: 14px; font-weight: 700;">📱 Téléchargez l'app</div>
+            <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 14px 20px; border-radius: 12px; font-size: 14px; font-weight: 700;">📝 Créez votre profil</div>
+            <div style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 14px 20px; border-radius: 12px; font-size: 14px; font-weight: 700;">✅ Validation par l'équipe</div>
+            <div style="background: var(--brand-orange); border: 1px solid var(--brand-orange); padding: 14px 20px; border-radius: 12px; font-size: 14px; font-weight: 700;">🚀 Recevez des clients !</div>
+        </div>
+        <p style="margin-top: 20px; font-size: 13px; color: #64748B;">Questions ? Contactez-nous sur <a href="https://wa.me/243999111401" style="color: var(--brand-orange); text-decoration: none; font-weight: 700;">WhatsApp</a></p>
     </div>
 </div>
 
@@ -792,76 +661,200 @@
             <div style="font-size: 42px; margin-bottom: 8px;">🤝</div>
             <h3 style="font-size: 19px; font-weight: 800; margin-bottom: 8px;">0% de Commission</h3>
             <p style="font-size: 14px; color: #CBD5E1;">Les paiements s'effectuent directement entre le client et l'artisan (Cash ou Mobile Money). Oxanne ne prélève aucun frais sur vos travaux.</p>
+            <div style="margin-top: 16px; font-size: 13px; color: #94A3B8;">Paiement accepté : M-Pesa · Airtel Money · Cash</div>
         </div>
     </div>
 </div>
 
-<!-- TEAM SECTION -->
-<section class="section" id="equipe">
+<!-- TÉMOIGNAGES -->
+<section class="section" id="avis">
     <div class="section-header">
-        <span class="section-tag">Équipe &amp; Vision</span>
-        <h2>L'Équipe derrière Oxanne</h2>
-        <p>Une équipe passionnée basée à Lubumbashi, déterminée à valoriser les compétences locales congolaises grâce au numérique.</p>
+        <span class="section-tag">Témoignages</span>
+        <h2>Ce que disent nos utilisateurs</h2>
+        <p>Des clients et artisans de Lubumbashi, Kinshasa et Kolwezi partagent leur expérience Oxanne.</p>
     </div>
-
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="laurent.jpeg" alt="Laurent Muyauli" class="avatar-img">
-            <h3>Laurent Muyauli</h3>
-            <span class="team-role">Fondateur &amp; Lead Développeur</span>
-            <p>Architecte technique et initiateur d'Oxanne. Passionné par le développement d'applications mobiles performantes et adaptées au marché congolais.</p>
-            <div class="tech-tags">
-                <span class="tech-tag">Flutter / Dart</span>
-                <span class="tech-tag">Supabase</span>
-                <span class="tech-tag">PostgreSQL</span>
-                <span class="tech-tag">Firebase Cloud</span>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">« J'avais une panne électrique un vendredi soir. En 20 minutes j'avais trouvé un électricien vérifié et il était chez moi en une heure. Service impeccable ! »</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">JK</div>
+                <div>
+                    <div class="testimonial-name">Jean-Karl Mukendi</div>
+                    <div class="testimonial-role">Client · Lubumbashi, Golf Météo</div>
+                </div>
             </div>
         </div>
-
-        <div class="team-card">
-            <img src="noella.jpg" alt="Noella Tshibangu" class="avatar-img">
-            <h3>Noella Tshibangu</h3>
-            <span class="team-role">Collaboratrice · Idéation &amp; Expérience</span>
-            <p>Contribution essentielle aux réflexions stratégiques, à l'expérience utilisateur et aux idées d'adaptation du service aux réalités quotidiennes des familles congolaises.</p>
-            <div class="tech-tags">
-                <span class="tech-tag">Idéation Produit</span>
-                <span class="tech-tag">Expérience Client</span>
-                <span class="tech-tag">Stratégie UX</span>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">« Depuis que je suis sur Oxanne, je reçois des demandes presque chaque jour. Je ne cherche plus de clients — ils viennent à moi directement sur l'application. »</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">PK</div>
+                <div>
+                    <div class="testimonial-name">Pascal Kabwe</div>
+                    <div class="testimonial-role">Artisan Plombier · Kinshasa, Gombe</div>
+                </div>
             </div>
         </div>
-
-        <div class="team-card">
-            <img src="miche.jpg" alt="Michée Ramazani" class="avatar-img">
-            <h3>Michée Ramazani</h3>
-            <span class="team-role">Collaborateur · Opérations &amp; Terrain</span>
-            <p>Force de proposition sur la structuration des besoins des artisans, les relations de proximité sur le terrain et la valorisation des compétences locales en RDC.</p>
-            <div class="tech-tags">
-                <span class="tech-tag">Relations Artisans</span>
-                <span class="tech-tag">Idéation Terrain</span>
-                <span class="tech-tag">Développement Local</span>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">« La messagerie est excellente et les notifications arrivent même quand le téléphone est en veille. Je n'ai jamais raté une demande de client depuis la mise à jour. »</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">RM</div>
+                <div>
+                    <div class="testimonial-name">Roger Mutombo</div>
+                    <div class="testimonial-role">Artisan Électricien · Kolwezi</div>
+                </div>
             </div>
         </div>
-
-        <div class="team-card">
-            <div class="avatar-box" style="background: linear-gradient(135deg, #16325B, #0A2240);">OX</div>
-            <h3>Équipe Support &amp; Validation</h3>
-            <span class="team-role">Opérations Oxanne RDC</span>
-            <p>Vérification rigoureuse des profils d'artisans, contrôle qualité des prestations, modération des avis et accompagnement client 7j/7 depuis Lubumbashi.</p>
-            <div class="tech-tags">
-                <span class="tech-tag">Support Client 7j/7</span>
-                <span class="tech-tag">Contrôle Qualité</span>
-                <span class="tech-tag">Lubumbashi · RDC</span>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★☆</div>
+            <p class="testimonial-text">« Très bonne application. J'ai pu faire poser mes carreaux à un tarif raisonnable en Francs Congolais. Le fait de pouvoir payer directement l'artisan sans intermédiaire, c'est génial. »</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">GN</div>
+                <div>
+                    <div class="testimonial-name">Grace Ngoy</div>
+                    <div class="testimonial-role">Cliente · Lubumbashi, Centre-Ville</div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">« En tant que menuisier, Oxanne m'a aidé à sortir de l'informalité. Mon profil est vérifié, les clients me font confiance. J'ai triplé mon activité en 3 mois. »</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">DL</div>
+                <div>
+                    <div class="testimonial-name">David Lubamba</div>
+                    <div class="testimonial-role">Artisan Menuisier · Lubumbashi</div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">« Le bandeau hors-ligne est une excellente idée. Avec le réseau à Goma parfois coupé, l'appli ne se ferme plus — elle attend juste la connexion. Très professionnel. »</p>
+            <div class="testimonial-author">
+                <div class="testimonial-avatar">AB</div>
+                <div>
+                    <div class="testimonial-name">Amani Bahati</div>
+                    <div class="testimonial-role">Client · Goma</div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- TEAM SECTION -->
+<section class="section" id="equipe" style="background: white; padding: 80px 24px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div class="section-header">
+            <span class="section-tag">Équipe &amp; Vision</span>
+            <h2>L'Équipe derrière Oxanne</h2>
+            <p>Une équipe passionnée basée à Lubumbashi, déterminée à valoriser les compétences locales congolaises grâce au numérique.</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="laurent.jpeg" alt="Laurent Muyauli" class="avatar-img">
+                <h3>Laurent Muyauli</h3>
+                <span class="team-role">Fondateur &amp; Lead Développeur</span>
+                <p>Architecte technique et initiateur d'Oxanne. Passionné par le développement d'applications mobiles performantes et adaptées au marché congolais.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Flutter / Dart</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Firebase Cloud</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="noella.jpg" alt="Noella Tshibangu" class="avatar-img">
+                <h3>Noella Tshibangu</h3>
+                <span class="team-role">Collaboratrice · Idéation &amp; Expérience</span>
+                <p>Contribution essentielle aux réflexions stratégiques, à l'expérience utilisateur et aux idées d'adaptation du service aux réalités quotidiennes des familles congolaises.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Idéation Produit</span>
+                    <span class="tech-tag">Expérience Client</span>
+                    <span class="tech-tag">Stratégie UX</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="miche.jpg" alt="Michée Ramazani" class="avatar-img">
+                <h3>Michée Ramazani</h3>
+                <span class="team-role">Collaborateur · Opérations &amp; Terrain</span>
+                <p>Force de proposition sur la structuration des besoins des artisans, les relations de proximité sur le terrain et la valorisation des compétences locales en RDC.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Relations Artisans</span>
+                    <span class="tech-tag">Idéation Terrain</span>
+                    <span class="tech-tag">Développement Local</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="avatar-box" style="background: linear-gradient(135deg, #16325B, #0A2240);">OX</div>
+                <h3>Équipe Support &amp; Validation</h3>
+                <span class="team-role">Opérations Oxanne RDC</span>
+                <p>Vérification rigoureuse des profils d'artisans, contrôle qualité des prestations, modération des avis et accompagnement client 7j/7 depuis Lubumbashi.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Support Client 7j/7</span>
+                    <span class="tech-tag">Contrôle Qualité</span>
+                    <span class="tech-tag">Lubumbashi · RDC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+    <div class="section-header">
+        <span class="section-tag">Questions Fréquentes</span>
+        <h2>Tout ce que vous devez savoir</h2>
+        <p>Des réponses claires aux questions les plus posées par nos utilisateurs en RDC.</p>
+    </div>
+    <div class="faq-list">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Comment télécharger l'application Oxanne ?</div>
+            <div class="faq-answer">Oxanne est disponible gratuitement sur le Google Play Store pour tous les smartphones Android. Cherchez « Oxanne » dans le Play Store ou cliquez sur le bouton de téléchargement en bas de cette page. L'application est légère (moins de 70 Mo) et fonctionne sur Android 5.0 et plus.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Oxanne est-il gratuit ? Y a-t-il des frais ?</div>
+            <div class="faq-answer">Oui, l'inscription et l'utilisation d'Oxanne sont 100% gratuites pour les clients et les artisans. Oxanne ne prélève aucune commission sur vos travaux. Les paiements s'effectuent directement entre le client et l'artisan en espèces ou via Mobile Money (M-Pesa, Airtel Money).</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Comment m'inscrire en tant qu'artisan ?</div>
+            <div class="faq-answer">Téléchargez l'application, sélectionnez « S'inscrire en tant qu'artisan », remplissez votre profil (spécialité, quartier, tarifs, photos de réalisations), puis soumettez pour validation. L'équipe Oxanne vérifie et approuve votre profil sous 24-48h. Une fois validé, vous recevez des notifications push pour chaque nouvelle demande de client correspondant à votre spécialité.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Comment fonctionne la vérification des artisans ?</div>
+            <div class="faq-answer">Chaque artisan est vérifié manuellement par l'équipe Oxanne avant d'apparaître dans les résultats. Nous vérifions son numéro de téléphone, sa spécialité déclarée et sa zone d'intervention. Un badge « Vérifié Oxanne » est attribué après validation. Les artisans non vérifiés ne sont pas visibles par les clients.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Comment payer l'artisan ?</div>
+            <div class="faq-answer">Le paiement se fait directement entre vous et l'artisan, sans intermédiaire. Vous pouvez payer en espèces (USD ou Francs Congolais), par Mobile Money (M-Pesa Congo, Airtel Money) selon l'accord convenu avec l'artisan dans la messagerie de l'application.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">J'ai oublié mon mot de passe. Que faire ?</div>
+            <div class="faq-answer">Sur l'écran de connexion, appuyez sur « Mot de passe oublié ? ». Entrez votre adresse email et vous recevrez un lien de réinitialisation. Cliquez sur le lien et créez un nouveau mot de passe. Toute la procédure prend moins de 2 minutes.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">L'application fonctionne-t-elle sans internet ?</div>
+            <div class="faq-answer">Oxanne nécessite une connexion internet pour fonctionner pleinement. Cependant, si votre connexion est interrompue, l'application affiche un bandeau « En attente de connexion » et ne vous déconnecte pas. Dès que le réseau revient, vous reprenez automatiquement là où vous en étiez, sans perdre vos données.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFaq(this)">Comment signaler un problème ou un artisan ?</div>
+            <div class="faq-answer">Vous pouvez nous contacter directement sur WhatsApp au +243 999 111 401 ou par email à supportoxanne@gmail.com. Notre équipe de support est disponible du lundi au samedi de 8h à 20h (heure de Lubumbashi).</div>
+        </div>
+    </div>
+</section>
+
 <!-- DOWNLOAD CTA -->
-<section class="section" id="telecharger" style="padding-top: 30px;">
+<section class="section" id="telecharger" style="padding-top: 20px;">
     <div style="background: linear-gradient(135deg, var(--brand-orange) 0%, #D4540C 100%); border-radius: 28px; padding: 60px 30px; text-align: center; color: white; box-shadow: 0 20px 40px rgba(243,111,33,0.3);">
+        <div style="font-size: 44px; margin-bottom: 14px;">📱</div>
         <h2 style="font-size: 36px; font-weight: 900; margin-bottom: 14px;">Prêt à trouver votre artisan en RDC ?</h2>
-        <p style="font-size: 17px; max-width: 600px; margin: 0 auto 30px; opacity: 0.95;">Téléchargez l'application Oxanne gratuitement sur votre smartphone Android dès aujourd'hui.</p>
-        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <p style="font-size: 17px; max-width: 600px; margin: 0 auto 30px; opacity: 0.95;">Téléchargez l'application Oxanne gratuitement sur votre smartphone Android dès aujourd'hui. Notifications push, messagerie instantanée, profils vérifiés — tout ce qu'il vous faut.</p>
+        <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap; margin-bottom: 20px;">
             <a href="https://play.google.com/store" target="_blank" style="background:white; color:var(--primary-navy); padding:16px 32px; border-radius:14px; font-weight:800; text-decoration:none; display:inline-flex; align-items:center; gap:10px; box-shadow:0 8px 20px rgba(0,0,0,0.15);">
                 ▶️ Disponible sur Google Play
             </a>
@@ -869,6 +862,7 @@
                 💬 Nous Contacter sur WhatsApp
             </a>
         </div>
+        <p style="font-size: 13px; opacity: 0.8;">📧 supportoxanne@gmail.com &nbsp;·&nbsp; ⏰ Lun – Sam · 8h00 – 20h00 CAT</p>
     </div>
 </section>
 
@@ -882,14 +876,21 @@
             </div>
             <p>La première plateforme congolaise de mise en relation directe entre particuliers et artisans qualifiés.</p>
             <p style="color:#64748B;">Lubumbashi, Haut-Katanga · République Démocratique du Congo</p>
+            <div class="footer-socials">
+                <a href="https://wa.me/243999111401" class="footer-social-btn" target="_blank" title="WhatsApp">💬</a>
+                <a href="mailto:supportoxanne@gmail.com" class="footer-social-btn" title="Email">✉️</a>
+            </div>
         </div>
 
         <div class="footer-col">
             <h4>Navigation</h4>
             <ul>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#nouveautes">Nouveautés</a></li>
                 <li><a href="#comment-ca-marche">Comment ça marche</a></li>
+                <li><a href="#avis">Avis utilisateurs</a></li>
                 <li><a href="#equipe">L'Équipe</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#telecharger">Téléchargement</a></li>
             </ul>
         </div>
@@ -908,6 +909,7 @@
             <p><strong>WhatsApp :</strong> <a href="https://wa.me/243999111401" style="color:var(--brand-orange); text-decoration:none;">+243 999 111 401</a></p>
             <p><strong>Email :</strong> <a href="mailto:supportoxanne@gmail.com" style="color:#CBD5E1; text-decoration:none;">supportoxanne@gmail.com</a></p>
             <p><strong>Horaires :</strong> Lun – Sam (8h00 – 20h00 CAT)</p>
+            <p style="margin-top: 14px; color: #475569; font-size: 12.5px;">Version app actuelle : <strong style="color: #94A3B8;">1.1.2</strong></p>
         </div>
     </div>
 
@@ -915,6 +917,15 @@
         <p>© 2026 <strong>Oxanne RDC</strong> — Laurent Muyauli. Tous droits réservés.</p>
     </div>
 </footer>
+
+<script>
+function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+}
+</script>
 
 </body>
 </html>
